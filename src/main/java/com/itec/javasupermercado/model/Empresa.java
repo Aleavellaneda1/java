@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author Ismael
+ * @author Alejandro Avellaneda
  */
 public class Empresa {
 

@@ -7,7 +7,7 @@ package com.itec.javasupermercado.model;
 
 /**
  *
- * @author Ismael
+ * @author Alejandro Avellaneda
  */
 public class Empleado {
 

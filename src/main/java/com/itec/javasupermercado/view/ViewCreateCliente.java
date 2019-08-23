@@ -10,7 +10,7 @@ import com.itec.javasupermercado.model.Cliente;
 
 /**
  *
- * @author ismae
+ * @author Alejandro Avellaneda
  */
 public class ViewCreateCliente extends javax.swing.JPanel {
     ControllerGestionCliente controlador;
@@ -46,6 +46,8 @@ public class ViewCreateCliente extends javax.swing.JPanel {
         jtf_direccion = new javax.swing.JTextField();
         jtf_telefono = new javax.swing.JTextField();
         jtf_email = new javax.swing.JTextField();
+
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jlbl_nombre.setText("Nombre :");
 

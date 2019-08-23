@@ -12,9 +12,11 @@ import com.itec.javasupermercado.model.Cliente;
  * @author Alejandro Avellaneda
  */
 public class ControllerGestionCliente {
-
-    public void create(Cliente c) {
+     public void create(Cliente c) {
 
     }
+    Cliente c1 = new Cliente("Alejandro","dante","456");
+   
 
+   
 }

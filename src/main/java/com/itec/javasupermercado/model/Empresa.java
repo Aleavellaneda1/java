@@ -16,4 +16,12 @@ public class Empresa {
     private String razonSocial;
     private List<Cliente> listaDeClientes;
     private List<Empleado> listaDeEmpleados;
+    
+    public Empresa(){
+    System.out.println("Objeto Empresa creado.");
+    this.listaDeClientes = new ArrayList<>();
+    this.listaDeEmpleados = new ArrayList<>();
+    
+   
+    }
 }

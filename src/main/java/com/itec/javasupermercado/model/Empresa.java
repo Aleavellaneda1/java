@@ -3,14 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.proyecto1.model;
+package com.itec.javasupermercado.model;
+
+import java.util.List;
 
 /**
  *
  * @author Ismael
  */
-public class TipoEmpleado {
+public class Empresa {
 
-    private String descripcion;
-
+    private String razonSocial;
+    private List<Cliente> listaDeClientes;
+    private List<Empleado> listaDeEmpleados;
 }

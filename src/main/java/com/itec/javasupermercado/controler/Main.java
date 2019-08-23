@@ -3,22 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.proyecto1.controler;
+package com.itec.javasupermercado.controler;
 
-import com.mycompany.proyecto1.view.PantallaPrincipal;
-
+import com.itec.javasupermercado.view.PantallaPrincipal;
 /**
  *
  * @author ismae
  */
 public class Main {
-
     public static void main(String[] args) {
-        System.out.println(" Hola Mundo ");
-
+        System.out.println("Hola Mundo:");
         PantallaPrincipal app = new PantallaPrincipal();
         app.setSize(800, 600);
         app.setVisible(true);
-
     }
 }

@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.proyecto1.model;
+package com.itec.javasupermercado.model;
 
 /**
  *
  * @author Ismael
  */
-public class Empleado {
+public class TipoEmpleado {
 
-    private String nombre, apellido, dni, direccion, telefono, email;
+    private String descripcion;
+
 }

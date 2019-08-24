@@ -21,36 +21,45 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jlbl_email" min="-2" max="-2" attributes="0"/>
-                          <Component id="jlbl_telefono" min="-2" max="-2" attributes="0"/>
-                          <Component id="jlbl_direccion" min="-2" max="-2" attributes="0"/>
-                          <Component id="jlbl_dni" min="-2" max="-2" attributes="0"/>
-                          <Component id="jlbl_apellido" min="-2" max="-2" attributes="0"/>
-                          <Component id="jlbl_nombre" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jlbl_direccion" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlbl_telefono" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlbl_email" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jtf_email" alignment="0" pref="262" max="32767" attributes="0"/>
-                          <Component id="jtf_telefono" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jtf_direccion" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jtf_dni" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jtf_apellido" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jtf_nombre" alignment="0" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jtf_telefono" alignment="0" min="-2" pref="262" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                  <Component id="jtf_dni" min="-2" pref="262" max="-2" attributes="0"/>
+                                  <Component id="jtf_direccion" min="-2" pref="262" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jtf_email" alignment="1" min="-2" pref="262" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jbtn_cancelar" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jbtn_aceptar" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                      <Component id="jbtn_aceptar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
-                      <Component id="jbtn_cancelar" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlbl_nombre" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jtf_nombre" min="-2" pref="262" max="-2" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jlbl_apellido" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jtf_apellido" min="-2" pref="262" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jlbl_dni" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="48" max="32767" attributes="0"/>
+              <EmptySpace pref="14" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -73,26 +82,26 @@
                   <Component id="jtf_dni" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jlbl_direccion" min="-2" max="-2" attributes="0"/>
-                  <Component id="jtf_direccion" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jtf_direccion" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jlbl_direccion" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jlbl_telefono" min="-2" max="-2" attributes="0"/>
-                  <Component id="jtf_telefono" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jlbl_telefono" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtf_telefono" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jlbl_email" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jtf_email" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jbtn_aceptar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jbtn_cancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtn_aceptar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="28" max="32767" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

@@ -12,4 +12,11 @@ package com.itec.javasupermercado.model;
 public class Empleado {
 
     private String nombre, apellido, dni, direccion, telefono, email;
+
+   
+    
+    
+    
+    
+    
 }

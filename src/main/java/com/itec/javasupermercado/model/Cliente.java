@@ -9,10 +9,12 @@ package com.itec.javasupermercado.model;
  *
  * @author ismae
  */
+
 public class Cliente {
 
     private String nombre, apellido, dni, direccion, telefono, email;
 
+    
     public String getNombre() {
         return nombre;
     }

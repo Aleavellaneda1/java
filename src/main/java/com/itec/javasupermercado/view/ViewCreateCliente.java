@@ -7,6 +7,7 @@ package com.itec.javasupermercado.view;
 
 import com.itec.javasupermercado.controler.ControllerGestionCliente;
 import com.itec.javasupermercado.model.Cliente;
+import com.itec.javasupermercado.model.Empresa;
 
 /**
  *
@@ -18,8 +19,7 @@ public class ViewCreateCliente extends javax.swing.JPanel {
      * Creates new form ViewCreateCliente
      */
     public ViewCreateCliente() {
-         controlador = new ControllerGestionCliente ();
-        
+         controlador = new ControllerGestionCliente (); // crea el objeto contrlador (que tiene todos los datos de cliente)
         initComponents();
     }
 
@@ -75,30 +75,35 @@ public class ViewCreateCliente extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jlbl_email)
-                            .addComponent(jlbl_telefono)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jlbl_direccion)
-                            .addComponent(jlbl_dni)
-                            .addComponent(jlbl_apellido)
-                            .addComponent(jlbl_nombre))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jtf_email, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
-                            .addComponent(jtf_telefono)
-                            .addComponent(jtf_direccion)
-                            .addComponent(jtf_dni)
-                            .addComponent(jtf_apellido)
-                            .addComponent(jtf_nombre)))
+                            .addComponent(jlbl_telefono)
+                            .addComponent(jlbl_email))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jtf_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jtf_dni, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jtf_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jtf_email, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jbtn_cancelar)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jbtn_aceptar))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addComponent(jbtn_aceptar)
-                        .addGap(91, 91, 91)
-                        .addComponent(jbtn_cancelar)))
-                .addContainerGap(48, Short.MAX_VALUE))
+                        .addComponent(jlbl_nombre)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jtf_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jlbl_apellido)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jtf_apellido, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jlbl_dni))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -116,45 +121,44 @@ public class ViewCreateCliente extends javax.swing.JPanel {
                     .addComponent(jlbl_dni)
                     .addComponent(jtf_dni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jlbl_direccion)
-                    .addComponent(jtf_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jtf_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jlbl_direccion))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlbl_telefono)
                     .addComponent(jtf_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlbl_email)
                     .addComponent(jtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jbtn_aceptar)
-                    .addComponent(jbtn_cancelar))
-                .addContainerGap(28, Short.MAX_VALUE))
+                    .addComponent(jbtn_cancelar)
+                    .addComponent(jbtn_aceptar))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbtn_aceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn_aceptarActionPerformed
-Cliente c = new Cliente();
-c.setNombre (jtf_nombre.getText());
-c.setApellido (jtf_apellido.getText());
-c.setDni (jtf_dni.getText());
-c.setDireccion (jtf_direccion.getText());
-c.setTelefono (jtf_telefono.getText());
-c.setEmail (jtf_email.getText());
+      
+        Cliente c = new Cliente();
+        c.setNombre (jtf_nombre.getText());
+        c.setApellido (jtf_apellido.getText());
+        c.setDni (jtf_dni.getText());
+        c.setDireccion (jtf_direccion.getText());
+        c.setTelefono (jtf_telefono.getText());
+        c.setEmail (jtf_email.getText());
 
-jtf_apellido.setEnabled (false);
-jtf_direccion.setEnabled(false);
-jtf_dni.setEnabled(false);
-jtf_email.setEnabled(false);
-jtf_nombre.setEnabled(false);
-jtf_telefono.setEnabled(false);
+        jtf_apellido.setText("");
+        jtf_direccion.setText("");
+        jtf_dni.setText("");
+        jtf_email.setText("");
+        jtf_nombre.setText("");
+        jtf_telefono.setText("");
+        
 
-jbtn_aceptar.setEnabled(false);
-jbtn_cancelar.setEnabled(false);
-
-controlador.create(c);
+        controlador.create(c);
 
 
     }//GEN-LAST:event_jbtn_aceptarActionPerformed

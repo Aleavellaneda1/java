@@ -5,6 +5,7 @@
  */
 package com.itec.javasupermercado.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,10 +19,35 @@ public class Empresa {
     private List<Empleado> listaDeEmpleados;
     
     public Empresa(){
-    System.out.println("Objeto Empresa creado.");
-    this.listaDeClientes = new ArrayList<>();
-    this.listaDeEmpleados = new ArrayList<>();
-    
-   
+        System.out.println("Objeto Empresa creado.");
+        this.listaDeClientes  = new ArrayList<>();
+        this.listaDeEmpleados = new ArrayList<>();
     }
+
+    public String getRazonSocial() {
+        return razonSocial;
+    }
+
+    public void setRazonSocial(String razonSocial) {
+        this.razonSocial = razonSocial;
+    }
+
+    public List<Cliente> getListaDeClientes() {
+        return listaDeClientes;
+    }
+
+    public void setListaDeClientes(List<Cliente> listaDeClientes) {
+        this.listaDeClientes = listaDeClientes;
+    }
+
+    public List<Empleado> getListaDeEmpleados() {
+        return listaDeEmpleados;
+    }
+
+    public void setListaDeEmpleados(List<Empleado> listaDeEmpleados) {
+        this.listaDeEmpleados = listaDeEmpleados;
+    }
+    
+    
+    
 }

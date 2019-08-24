@@ -17,12 +17,12 @@ public class PantallaPrincipal extends javax.swing.JFrame {
      * Creates new form PantallaPrincipal
      */
     public PantallaPrincipal() {
-        vcc = new ViewCreateCliente();
-        vcc.setSize(400, 400);
-   
-        this.add(this.vcc);
-
-        initComponents();
+        vcc = new ViewCreateCliente(); //establece en vcc la vista ViewCreateCliente()
+        vcc.setSize(400, 400); // setea tamañp
+        this.add(this.vcc); // this.add (PantallaPrincipal.add) le paso  PantallaPrincipal.vcc que es la vista
+        initComponents(); // inisializa los componentes
+        
+        // en este punto se vizualiza el panel y espera a las instrucciones de la vista
     }
 
     /**
@@ -36,8 +36,8 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setMaximumSize(new java.awt.Dimension(700, 600));
-        setMinimumSize(new java.awt.Dimension(700, 600));
+        setMaximumSize(new java.awt.Dimension(400, 400));
+        setMinimumSize(new java.awt.Dimension(400, 400));
         setPreferredSize(new java.awt.Dimension(700, 600));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

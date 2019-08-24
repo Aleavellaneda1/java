@@ -6,17 +6,45 @@
 package com.itec.javasupermercado.controler;
 
 import com.itec.javasupermercado.model.Cliente;
+import com.itec.javasupermercado.model.Empresa;
+import com.itec.javasupermercado.model.Empleado;
+import com.itec.javasupermercado.model.TipoEmpleado;
 
 /**
  *
  * @author Alejandro Avellaneda
  */
 public class ControllerGestionCliente {
-     public void create(Cliente c) {
 
-    }
-    Cliente c1 = new Cliente("Alejandro","dante","456");
+     private Empresa empresa;
+    public ControllerGestionCliente() {
    
+        Cliente c1 = new Cliente();
+        ///aca hayq ue crear la lista dclientes para guardar en la empresas 
+         empresa = new Empresa();
+         
+         
+          
+    }
+    
+    
+    
+    public void create(Cliente c) {
+        
+        empresa.setListaDeClientes(c);
+       // System.out.println(c.getApellido());
+        
+        
+    }
+    
+    
+  
+   
+    
+    
+    
+    
+    
 
    
 }
